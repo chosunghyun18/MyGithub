@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# bigstore 로컬 테스트 오브젝트
+.bigstore-objects/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.env

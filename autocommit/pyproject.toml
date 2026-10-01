@@ -1,0 +1,23 @@
+[project]
+name = "mygithub-autocommit"
+version = "0.1.0"
+description = "문서 디렉터리 저장 시 자동 커밋 (디바운스 + diff 요약 메시지)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+autocommit = "autocommit.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["autocommit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
